@@ -1,0 +1,56 @@
+[{
+    "id" : "abc-news-au",
+    "name": "ABC News (AU)",
+    "image_url": "https://icons.better-idea.org/icon?url=http://www.abc.net.au/news&size=70..120..200"
+    },
+	{
+        "id" : "al-jazeera-english",
+        "name": "Al Jazeera English",
+        "image_url": "https://icons.better-idea.org/icon?url=http://www.aljazeera.com&size=70..120..200"
+    },
+	{
+        "id" : "ars-technica",
+        "name": "Ars Technica",
+        "image_url": "https://icons.better-idea.org/icon?url=http://arstechnica.com&size=70..120..200"
+    },
+	{
+        "id" : "associated-press",
+        "name": "Associated Press",
+        "image_url": "https://icons.better-idea.org/icon?url=https://apnews.com/&size=70..120..200"
+    },
+	{
+        "id" : "bbc-news",
+        "name": "BBC News",
+        "image_url": "https://icons.better-idea.org/icon?url=http://www.bbc.co.uk/news&size=70..120..200"
+    },
+	{
+        "id" : "bbc-sport",
+        "name": "BBC Sport",
+        "image_url": "https://icons.better-idea.org/icon?url=http://www.bbc.co.uk/sport&size=70..120..200"
+    },
+	{
+        "id" : "bild",
+        "name": "Bild",
+        "image_url": "https://icons.better-idea.org/icon?url=http://www.bild.de&size=70..120..200"
+    },
+	{
+        "id" : "bloomberg",
+        "name": "Bloomberg",
+        "image_url": "https://icons.better-idea.org/icon?url=http://www.bloomberg.com&size=70..120..200"
+    },
+	{
+        "id" : "breitbart-news",
+        "name": "Breitbart News",
+        "image_url": "https://icons.better-idea.org/icon?url=http://www.breitbart.com&size=70..120..200"
+    },
+	{
+        "id" : "business-insider",
+        "name": "Business Insider",
+        "image_url": "https://icons.better-idea.org/icon?url=http://www.businessinsider.com&size=70..120..200"
+    },
+	{
+        "id" : "buzzfeed",
+        "name": "Buzzfeed",
+        "image_url": "https://icons.better-idea.org/icon?url=https://www.buzzfeed.com&size=70..120..200"
+    }
+]

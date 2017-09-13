@@ -19,6 +19,7 @@
 		8E43F9F21F666FD400B22793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E43F9F01F666FD400B22793 /* LaunchScreen.storyboard */; };
 		8E43F9FA1F66710900B22793 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E43F9F91F66710900B22793 /* GoogleService-Info.plist */; };
 		8E43F9FC1F668B0100B22793 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E43F9FB1F668B0100B22793 /* HomePageViewController.swift */; };
+		8EE52D521F696204009A1D6A /* NewsSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EE52D511F696204009A1D6A /* NewsSource.json */; };
 		A733ED19912192CC7B6A76C7 /* Pods_Daily_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C40E681CB81144261639A93 /* Pods_Daily_News.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		8E43F9F31F666FD400B22793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E43F9F91F66710900B22793 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E43F9FB1F668B0100B22793 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		8EE52D511F696204009A1D6A /* NewsSource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NewsSource.json; sourceTree = "<group>"; };
 		C418A6C3AF81DFE669376386 /* Pods-Daily News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Daily News/Pods-Daily News.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,13 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		8E071A5D1F694C0200F83496 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		8E43F9D81F666FD400B22793 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +112,9 @@
 		8E43F9E31F666FD400B22793 /* Daily News */ = {
 			isa = PBXGroup;
 			children = (
+				8EE52D511F696204009A1D6A /* NewsSource.json */,
 				8E43F9E41F666FD400B22793 /* AppDelegate.swift */,
+				8E071A5D1F694C0200F83496 /* Model */,
 				8E071A5A1F67DBA000F83496 /* View */,
 				8E071A591F67DB9300F83496 /* View Controller */,
 				8E43F9E81F666FD400B22793 /* Main.storyboard */,
@@ -188,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE52D521F696204009A1D6A /* NewsSource.json in Resources */,
 				8E43F9F21F666FD400B22793 /* LaunchScreen.storyboard in Resources */,
 				8E43F9FA1F66710900B22793 /* GoogleService-Info.plist in Resources */,
 				8E43F9EF1F666FD400B22793 /* Assets.xcassets in Resources */,
@@ -238,12 +250,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Daily News/Pods-Daily News-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",

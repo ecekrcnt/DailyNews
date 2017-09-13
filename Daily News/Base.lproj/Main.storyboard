@@ -128,17 +128,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pQ-WH-Lwt">
-                                                    <rect key="frame" x="35" y="52" width="21" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjh-Kr-ZeY">
+                                                    <rect key="frame" x="0.0" y="84" width="125" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="29g-9C-yA2">
+                                                    <rect key="frame" x="22" y="0.0" width="80" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <connections>
-                                            <outlet property="label" destination="5pQ-WH-Lwt" id="Axu-L2-UR4"/>
+                                            <outlet property="image_cell" destination="29g-9C-yA2" id="Ja8-Wv-zoH"/>
+                                            <outlet property="lbl_cell" destination="pjh-Kr-ZeY" id="ftv-eG-Mkf"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -163,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dwq-ks-xam" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2366" y="137"/>
+            <point key="canvasLocation" x="2365.5999999999999" y="136.28185907046478"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="T3S-gK-Lor">
