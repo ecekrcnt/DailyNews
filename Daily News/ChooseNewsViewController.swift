@@ -9,13 +9,18 @@
 import UIKit
 import Alamofire
 import AlamofireImage
+import FirebaseDatabase
+import FirebaseAuth
+
+
 
 class ChooseNewsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
     var news:[NSDictionary] = []
     var selectedIds=[String]()
-
+    var ref:DatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let itemSize = UIScreen.main.bounds.width/3 - 10
@@ -25,13 +30,15 @@ class ChooseNewsViewController: UIViewController, UICollectionViewDelegate, UICo
         layout.minimumInteritemSpacing = 10
         layout.minimumLineSpacing = 10
         collectionView.collectionViewLayout = layout
-        
+    
         let jsonArray = try? JSONSerialization.jsonObject(with: readjson(fileName: "NewsSource") as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
         for json in jsonArray! {
             let NewsSource = json as? NSDictionary
             news.append(NewsSource!)
         }
         collectionView.reloadData()
+        
+        ref = Database.database().reference()
     }
     
     func readjson(fileName: String) -> NSData{
@@ -84,5 +91,17 @@ class ChooseNewsViewController: UIViewController, UICollectionViewDelegate, UICo
             self.selectedIds.append((self.news[indexPath.row].value(forKey: "id") as? String)!)
             cell?.backgroundColor = UIColor.green 
         }
+        
+        self.ref?.child("users").child((Auth.auth().currentUser?.uid)!).setValue(["selectedNewsSources": selectedIds])
     }
 }
+
+
+
+
+
+
+
+
+
+

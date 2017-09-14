@@ -31,7 +31,7 @@
 		8E071A571F67DB8500F83496 /* ChooseNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseNewsViewController.swift; sourceTree = "<group>"; };
 		8E071A5B1F67DDB900F83496 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
 		8E43F9E11F666FD400B22793 /* Daily News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E43F9E41F666FD400B22793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E43F9E41F666FD400B22793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Daily News/AppDelegate.swift"; sourceTree = "<group>"; };
 		8E43F9E61F666FD400B22793 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8E43F9E91F666FD400B22793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E43F9EC1F666FD400B22793 /* Daily_News.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Daily_News.xcdatamodel; sourceTree = "<group>"; };
@@ -94,6 +94,7 @@
 		8E43F9D81F666FD400B22793 = {
 			isa = PBXGroup;
 			children = (
+				8E43F9E41F666FD400B22793 /* AppDelegate.swift */,
 				8E43F9E31F666FD400B22793 /* Daily News */,
 				8E43F9E21F666FD400B22793 /* Products */,
 				ABF5CD01712C750F15F015FD /* Pods */,
@@ -113,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				8EE52D511F696204009A1D6A /* NewsSource.json */,
-				8E43F9E41F666FD400B22793 /* AppDelegate.swift */,
 				8E071A5D1F694C0200F83496 /* Model */,
 				8E071A5A1F67DBA000F83496 /* View */,
 				8E071A591F67DB9300F83496 /* View Controller */,

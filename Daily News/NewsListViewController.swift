@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class NewsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
